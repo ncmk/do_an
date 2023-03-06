@@ -1,0 +1,88 @@
+.doctor-list{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--gray-bg);
+}
+
+.dl-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.dl-content h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.dl-content ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card{
+    display: block;
+    background-color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: all .25s;
+}
+
+.card .avatar{
+    width: 100%;
+    aspect-ratio: 1;
+    border: 2px solid #ddd;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 12px;
+    color: var(--text-gray-color);
+}
+
+.card-text .name{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.dl-content .more{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .25s;
+}
+
+.dl-content .more span{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.dl-content .more:hover{
+    color: var(--primary-color);
+}
+
+.dl-content .more i{
+    transition: all .25s;
+}
+
+.dl-content .more:hover i{
+    transform: rotate(180deg);
+    color: var(--primary-color);
+}
